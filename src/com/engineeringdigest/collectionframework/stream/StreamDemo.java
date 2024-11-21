@@ -32,7 +32,7 @@ public class StreamDemo {
         // 3. Using Stream.of()
         Stream<String> stream2 = Stream.of("a", "b");
         // 4. Infinite streams
-        Stream.generate(() -> 1);
-        Stream.iterate(1, x -> x + 1);
+        Stream.generate(() -> 1);.limit(100);
+        Stream.iterate(seed:1, x -> x + 1);just like increment  .limit(100).collect(Collectors.toLiat()); 
     }
 }
